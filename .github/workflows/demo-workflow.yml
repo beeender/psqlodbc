@@ -18,7 +18,7 @@ jobs:
         run: ls
       - name: Install psql clients
         shell: pwsh
-        run: wget https://get.enterprisedb.com/postgresql/postgresql-16.3-1-windows-x64.exe
+        run: choco install postgres -y
       - name: Build all
         shell: pwsh
         run: winbuild/BuildAll.ps1

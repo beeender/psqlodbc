@@ -16,3 +16,6 @@ jobs:
       - name: Perform a Pester test from the command-line
         shell: pwsh
         run: ls
+      - name: Build all
+        shell: pwsh
+        run: winbuild/BuildAll.ps1

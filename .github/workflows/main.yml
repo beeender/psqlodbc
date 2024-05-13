@@ -1,13 +1,7 @@
 name: MSBuild
 run-name: psql ODBC CI - ${{ github.event.head_commit.message }}
 
-on:
-  push:
-    branches: [ "main" ]
-    tags:
-      - 'REL-*'
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 env:
   # Path to the solution file relative to the root of the project.
